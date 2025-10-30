@@ -13,7 +13,7 @@ public class CorsConfig {
             @Override
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
-                        .allowedOrigins("https://user-frontend-rouge.vercel.app/") // or your frontend URL after deployment
+                        .allowedOrigins("http://localhost:3000", "https://user-frontend-rouge.vercel.app/") // or your frontend URL after deployment
                         .allowedMethods("GET", "POST", "PUT", "DELETE");
             }
         };
